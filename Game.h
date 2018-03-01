@@ -4,6 +4,8 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 
+#include "Util/FPSCounter.h"
+
 
 class Game {
 public:
@@ -31,7 +33,7 @@ private:
 	//for now it will hold ints
 	std::vector<std::unique_ptr<int>> _states;
 
-	int fpsCounter;
+	FPSCounter fpsCounter;
 
 	bool _shouldPop = false;
 };
