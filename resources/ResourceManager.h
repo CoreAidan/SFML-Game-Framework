@@ -9,7 +9,7 @@ class ResourceManager {
 	using cpString = const std::string&;
 
 public:
-	ResourceManager(cpString folder, cpString extention) : _folder("../res/" + folder + "/"), _extention("." + extention) {
+	ResourceManager(cpString folder, cpString extention) : _folder("res/" + folder + "/"), _extention("." + extention) {
 
 	}
 

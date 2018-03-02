@@ -6,6 +6,7 @@
 
 FPSCounter::FPSCounter()
 {	
+	_font.loadFromFile("../res/arial.ttf");
 	_text.move(10, 10);
 	_text.setOutlineColor(sf::Color::Black);
 	_text.setFillColor({ 255,255,255 });
