@@ -4,11 +4,13 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 
-#include "Util/FPSCounter.h"
-#include "States/StateBase.h"
+#include "util/FPSCounter.h"
+#include "states/StateBase.h"
 
 class Game {
 public:
+	Game();
+
 	void run();
 
 	template<typename T, typename... Args>
@@ -33,7 +35,7 @@ private:
 	//for now it will hold ints
 	std::vector<std::unique_ptr<StateBase>> _states;
 
-	FPSCounter fpsCounter;
+	FPSCounter counter;
 
 	bool _shouldPop = false;
 };
