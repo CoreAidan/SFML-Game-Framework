@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "Util/FPSCounter.h"
-
+#include "States/StateBase.h"
 
 class Game {
 public:
@@ -24,14 +24,14 @@ private:
 
 	//will return a state inheiriting from a base state class
 	//for now it will return void
-	void getCurrentState();
+	StateBase& getCurrentState();
 
 	sf::RenderWindow _window;
 
 	//vector to hold states that will be pushed on
 	//will hold pointers to classes inheiriting from a base state class
 	//for now it will hold ints
-	std::vector<std::unique_ptr<int>> _states;
+	std::vector<std::unique_ptr<StateBase>> _states;
 
 	FPSCounter fpsCounter;
 
