@@ -1,5 +1,6 @@
 #include "FPSCounter.h"
 
+#include "../resources/ResourceHandler.h"
 
 #include <iostream>
 
@@ -10,6 +11,7 @@ FPSCounter::FPSCounter()
 	_text.setOutlineColor(sf::Color::Black);
 	_text.setFillColor({ 255,255,255 });
 	_text.setOutlineThickness(2);
+	_text.setFont(ResourceHandler::get().fonts.get("arial"));
 	_text.setCharacterSize(25);
 }
 
