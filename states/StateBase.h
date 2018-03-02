@@ -2,7 +2,7 @@
 
 #include <SFML\Graphics.hpp>
 
-#include "../util/NonCopyable.h"
+#include "../utils/NonCopyable.h"
 
 class Game;
 

@@ -5,10 +5,12 @@
 #include <iostream>
 
 std::string test;
+sf::CircleShape shape(100.f);
 
 StatePlay::StatePlay(Game& game): StateBase(game)
 {
 	
+	shape.setFillColor(sf::Color::Green);
 }
 
 void StatePlay::handleEvent(sf::Event e){
@@ -28,7 +30,5 @@ void StatePlay::fixedUpdate(sf::Time deltaTime){
 }
 
 void StatePlay::render(sf::RenderTarget& renderer){
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
 	renderer.draw(shape);
 }

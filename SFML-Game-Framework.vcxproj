@@ -21,16 +21,20 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="resources\ResourceHandler.cpp" />
     <ClCompile Include="states\StatePlay.cpp" />
-    <ClCompile Include="util\FPSCounter.cpp" />
+    <ClCompile Include="utils\FPSCounter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="resources\ResourceHandler.h" />
+    <ClInclude Include="resources\ResourceManager.h" />
     <ClInclude Include="states\StateBase.h" />
     <ClInclude Include="states\StatePlay.h" />
-    <ClInclude Include="util\FPSCounter.h" />
-    <ClInclude Include="util\NonCopyable.h" />
-    <ClInclude Include="util\Random.h" />
+    <ClInclude Include="utils\FPSCounter.h" />
+    <ClInclude Include="utils\NonCopyable.h" />
+    <ClInclude Include="utils\NonMoveable.h" />
+    <ClInclude Include="utils\Random.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

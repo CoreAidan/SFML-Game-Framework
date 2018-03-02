@@ -4,7 +4,7 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 
-#include "util/FPSCounter.h"
+#include "utils/FPSCounter.h"
 #include "states/StateBase.h"
 
 class Game {
