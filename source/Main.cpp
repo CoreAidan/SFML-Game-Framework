@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "util/Random.h"
+#include "utils\Random.h"
 int main()
 {
 	Game game;

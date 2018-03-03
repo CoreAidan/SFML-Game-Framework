@@ -15,36 +15,60 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <Image Include="res\textures\_fail.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sfx\_fail.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\fonts\_fail.ttf" />
+    <Font Include="res\fonts\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\resources\ResourceHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="source\states\StatePlay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="util\FPSCounter.cpp">
+    <ClCompile Include="source\utils\FPSCounter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="states\StatePlay.cpp">
+    <ClCompile Include="source\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="util\FPSCounter.h">
+    <ClInclude Include="source\resources\ResourceHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="states\StateBase.h">
+    <ClInclude Include="source\resources\ResourceManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="util\NonCopyable.h">
+    <ClInclude Include="source\states\StateBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="states\StatePlay.h">
+    <ClInclude Include="source\states\StatePlay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="util\Random.h">
+    <ClInclude Include="source\utils\FPSCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\NonCopyable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\NonMoveable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
