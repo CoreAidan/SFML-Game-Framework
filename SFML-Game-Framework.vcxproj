@@ -19,22 +19,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="resources\ResourceHandler.cpp" />
-    <ClCompile Include="states\StatePlay.cpp" />
-    <ClCompile Include="utils\FPSCounter.cpp" />
+    <Image Include="res\textures\_fail.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="resources\ResourceHandler.h" />
-    <ClInclude Include="resources\ResourceManager.h" />
-    <ClInclude Include="states\StateBase.h" />
-    <ClInclude Include="states\StatePlay.h" />
-    <ClInclude Include="utils\FPSCounter.h" />
-    <ClInclude Include="utils\NonCopyable.h" />
-    <ClInclude Include="utils\NonMoveable.h" />
-    <ClInclude Include="utils\Random.h" />
+    <None Include="res\sfx\_fail.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\fonts\arial.ttf" />
+    <Font Include="res\fonts\_fail.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Game.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\resources\ResourceHandler.cpp" />
+    <ClCompile Include="source\states\StatePlay.cpp" />
+    <ClCompile Include="source\utils\FPSCounter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Game.h" />
+    <ClInclude Include="source\resources\ResourceHandler.h" />
+    <ClInclude Include="source\resources\ResourceManager.h" />
+    <ClInclude Include="source\states\StateBase.h" />
+    <ClInclude Include="source\states\StatePlay.h" />
+    <ClInclude Include="source\utils\FPSCounter.h" />
+    <ClInclude Include="source\utils\NonCopyable.h" />
+    <ClInclude Include="source\utils\NonMoveable.h" />
+    <ClInclude Include="source\utils\Random.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

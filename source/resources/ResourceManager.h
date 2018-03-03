@@ -9,7 +9,7 @@ class ResourceManager {
 	using cpString = const std::string&;
 
 public:
-	ResourceManager(cpString folder, cpString extention) : _folder("../res/" + folder + "/"), _extention("." + extention) {
+	ResourceManager(cpString folder, cpString extention) : _folder("res/" + folder + "/"), _extention("." + extention) {
 
 	}
 
@@ -32,6 +32,9 @@ public:
 			Resource fail;
 			fail.loadFromFile(_folder + "_fail" + _extention);
 			_resources.insert(std::make_pair(name, fail));
+		}
+		else {
+			_resources.insert(std::make_pair(name, r));
 		}
 	}
 

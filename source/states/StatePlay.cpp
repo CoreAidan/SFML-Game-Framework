@@ -7,6 +7,8 @@
 std::string test;
 sf::CircleShape shape(100.f);
 
+FPSCounter counter;
+
 StatePlay::StatePlay(Game& game): StateBase(game)
 {
 	
@@ -22,7 +24,7 @@ void StatePlay::handleInput(){
 }
 
 void StatePlay::update(sf::Time deltaTime){
-
+	counter.update();
 }
 
 void StatePlay::fixedUpdate(sf::Time deltaTime){
@@ -30,5 +32,6 @@ void StatePlay::fixedUpdate(sf::Time deltaTime){
 }
 
 void StatePlay::render(sf::RenderTarget& renderer){
-	renderer.draw(shape);
+	counter.render(renderer);
+	//renderer.draw(shape);
 }
