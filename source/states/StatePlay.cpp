@@ -9,8 +9,7 @@ sf::CircleShape shape(100.f);
 
 FPSCounter counter;
 
-StatePlay::StatePlay(Game& game): StateBase(game)
-{
+StatePlay::StatePlay(Game& game): StateBase(game){
 	
 	shape.setFillColor(sf::Color::Green);
 }

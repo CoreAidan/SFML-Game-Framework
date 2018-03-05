@@ -52,8 +52,7 @@ void Game::run(){
 }
 
 void Game::tryPop() {
-	if (_shouldPop)
-	{
+	if (_shouldPop){
 		_states.pop_back();
 	}
 }
