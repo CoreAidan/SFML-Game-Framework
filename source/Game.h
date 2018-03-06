@@ -38,6 +38,7 @@ private:
 	bool _shouldPop = false;
 };
 
-template<typename T, typename... Args> void Game::pushState(Args&&... args) {
+template<typename T, typename... Args> 
+void Game::pushState(Args&&... args) {
 	_states.push_back(std::make_unique<T>(std::forward<Args>(args)...));
 }

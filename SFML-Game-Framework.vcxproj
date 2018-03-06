@@ -37,6 +37,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Game.h" />
+    <ClInclude Include="source\input\Binding.h" />
+    <ClInclude Include="source\input\InputManager.h" />
     <ClInclude Include="source\resources\ResourceHandler.h" />
     <ClInclude Include="source\resources\ResourceManager.h" />
     <ClInclude Include="source\states\StateBase.h" />

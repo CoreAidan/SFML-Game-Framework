@@ -10,7 +10,7 @@
 #include "Binding.h"
 
 template<typename T>
-class Manager
+class InputManager
 {
 public:
 	using BindingType = Binding<T>;
@@ -22,9 +22,9 @@ public:
 
 	void operator()(const sf::Event& e)
 	{
-		for (auto& k : bindings)
+		for (auto& key : bindings)
 		{
-			k(e);
+			key(e);
 		}
 	}
 
