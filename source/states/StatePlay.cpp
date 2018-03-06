@@ -32,5 +32,4 @@ void StatePlay::fixedUpdate(sf::Time deltaTime){
 
 void StatePlay::render(sf::RenderTarget& renderer){
 	counter.render(renderer);
-	//renderer.draw(shape);
 }
