@@ -29,7 +29,7 @@ void Game::run(){
 		//Real time update
 		state.handleInput();
 		state.update(elapsed);
-		counter.update();
+		_counter.update();
 
 		//Fixed time update
 		while (lag >= timePerUpdate) {
@@ -41,7 +41,7 @@ void Game::run(){
 		//Render
 		_window.clear();
 		state.render(_window);
-		counter.render(_window);
+		//_counter.render(_window);
 		_window.display();
 
 
