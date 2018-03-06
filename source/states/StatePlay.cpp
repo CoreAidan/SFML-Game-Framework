@@ -9,11 +9,10 @@ sf::CircleShape shape(100.f);
 
 FPSCounter counter;
 
-StatePlay::StatePlay(Game& game): StateBase(game) {
+StatePlay::StatePlay(Game& game): StateBase(game){
+	
 	shape.setFillColor(sf::Color::Green);
-	shape.setPosition(sf::Vector2f(105.f, 104.f));
 }
-
 
 void StatePlay::handleEvent(sf::Event e){
 
@@ -33,5 +32,5 @@ void StatePlay::fixedUpdate(sf::Time deltaTime){
 
 void StatePlay::render(sf::RenderTarget& renderer){
 	counter.render(renderer);
-	renderer.draw(shape);
+	//renderer.draw(shape);
 }

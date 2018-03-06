@@ -25,15 +25,17 @@ private:
 	void tryPop();
 
 	//will return a state inheiriting from a base state class
+	//for now it will return void
 	StateBase& getCurrentState();
 
 	sf::RenderWindow _window;
 
 	//vector to hold states that will be pushed on
 	//will hold pointers to classes inheiriting from a base state class
+	//for now it will hold ints
 	std::vector<std::unique_ptr<StateBase>> _states;
 
-	FPSCounter _counter;
+	FPSCounter counter;
 
 	bool _shouldPop = false;
 };

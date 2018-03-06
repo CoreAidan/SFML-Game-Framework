@@ -14,5 +14,4 @@ public:
 	void render(sf::RenderTarget& renderer) override;
 
 private:
-
 };
