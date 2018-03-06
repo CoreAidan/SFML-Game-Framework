@@ -1,5 +1,8 @@
 #pragma once
 
+#include <type_traits>
+#include <functional>
+
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/Mouse.hpp>
 #include <SFML/Window/Keyboard.hpp>
